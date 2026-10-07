@@ -1,0 +1,24 @@
+{
+  "name": "taceo-lab",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "wallet": "node scripts/wallet.mjs",
+    "faucet": "node scripts/faucet.mjs",
+    "balance": "node scripts/balance.mjs",
+    "check": "node scripts/run-sdk.mjs pay.mjs --dry-run",
+    "pay": "node scripts/run-sdk.mjs pay.mjs",
+    "plasma": "node scripts/run-sdk.mjs plasma.mjs",
+    "oft": "node scripts/run-sdk.mjs oft.mjs"
+  },
+  "dependencies": {
+    "@taceo/confidential-x402": "1.0.2",
+    "@taceo/merces-oft-client": "^0.2.0",
+    "@taceo/merces1-client": "1.0.1",
+    "@taceo/merces2-client": "1.1.0",
+    "@x402/fetch": "2.28.0",
+    "tsx": "4.23.15",
+    "undici": "6.29.0",
+    "viem": "2.57.3"
+  }
+}
